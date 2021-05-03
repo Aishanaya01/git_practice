@@ -54,10 +54,7 @@ node_modules
 - `git remote add <shortname> <url>` The command git fetch can then be used to create and update remote-tracking branches/
 # Pushing
 - `git push <remotename> <object>:<remotebranchname>` : general syntax
-## Delete remote branch
-- `git push <remotename>` :<remotebranchname> : Deleting the remote branch is the equivalent of pushing an empty object to it. Example: `git push origin :wip-yourname`: will delete the remote branch wip-yourname Instead of using the colon, you can also use the `--delete flag`, which is better readable in some cases. Example: `git push origin --delete wip-yourname`
 
-- `git push origin feature_x` : to push to a specific branch, for example: feature_x
 ## Set the remote tracking branch
 `git push --set-upstream origin master` OR
 `git push -u origin master` ( -u as a shorthand for --set-upstream)
